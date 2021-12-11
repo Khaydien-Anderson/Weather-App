@@ -44,8 +44,29 @@ body .card .search-bar {
 body .card button:hover {
   background: #7c7c7c6b;
 }
-body .card h1 {
+body .card .temp h1 {
   margin: 0;
+  margin-bottom: 0.3em;
+}
+body .card .flex {
+  display: flex;
+  align-items: center;
+}
+body .card .description {
+  text-transform: capitalize;
+  margin-left: 7px;
+}
+body .card .weather .loading {
+  visibility: hidden;
+  max-height: 25px;
+  position: relative;
+}
+body .card .weather .loading:after {
+  visibility: visible;
+  content: "loading...";
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
 }
 body .card button {
   margin: 0.5em;

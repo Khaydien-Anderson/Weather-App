@@ -45,9 +45,33 @@ body {
         button:hover {
             background: #7c7c7c6b;
         }
-        h1 {
+        .temp h1 {
             margin: 0;
+            margin-bottom: 0.3em;
         }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        .description {
+            text-transform: capitalize;
+            margin-left: 7px;
+        }
+        .weather .loading {
+visibility: hidden;
+max-height: 25px;
+position: relative;
+        }
+
+        .weather .loading:after {
+            visibility: visible;
+            content: "loading...";
+            color: whitesmoke;
+            position: absolute;
+            top: 0;
+        }
+
         button {
             margin: 0.5em;
             border-radius: 50%;
